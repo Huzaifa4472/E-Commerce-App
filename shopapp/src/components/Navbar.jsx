@@ -24,6 +24,7 @@ const Language = styled.span`
 `;
 const SearchContainer = styled.div`
   border: 1px solid lightgray;
+  border-radius: 6px;
   display: flex;
   align-itmes: center;
   margin-left: 25px;
@@ -63,12 +64,12 @@ const Navbar = () => {
           </SearchContainer>
         </Left>
         <Middle>
-          <Logo>ZA!FF!</Logo>
+          <Logo>ZA!FF!...</Logo>
         </Middle>
         <Rigt>
           <MenuItem>REGISTER</MenuItem>
           <MenuItem>LOGIN</MenuItem>
-          <Badge badgeContent={4} color="success">
+          <Badge badgeContent={7} color="success">
             <AddShoppingCartIcon color="action" />
           </Badge>
         </Rigt>

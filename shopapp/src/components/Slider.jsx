@@ -1,11 +1,16 @@
 import styled from "styled-components";
 import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
+import { useState } from "react";
+import { sliderItems } from "../data";
+import image from "../images/1.jpg";
+
 const Container = styled.div`
   width: 100%;
   height: 100vh;
   display: flex;
   position: relative;
+  overflow: hidden;
 `;
 
 const Arrow = styled.div`
@@ -24,35 +29,72 @@ const Arrow = styled.div`
   right: ${(props) => props.direction === "right" && "10px"};
   margin: auto;
   opacity: 0.5;
+  z-index: 2;
 `;
 const Wrapper = styled.div`
   height: 100%;
+  display: flex;
+  transform: translateX(0vw);
 `;
 const Slide = styled.div`
+  width: 100vw;
+  height: 100vh;
   display: flex;
   align-items: center;
 `;
 const ImgContainer = styled.div`
+  height: 100%;
   flex: 1;
 `;
-const Image = styled.img``;
+const Image = styled.img`
+  height: 80%;
+`;
 const InfoContainer = styled.div`
   flex: 1;
+  padding: 50px;
 `;
-
+const Title = styled.h1`
+  font-size: 78px;
+`;
+const Desc = styled.p`
+  margin: 25px 0px;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 3px;
+`;
+const Button = styled.button`
+  padding: 10px;
+  font-weight: 500;
+  font-size: 16px;
+  border: 1.5px solid teal;
+  border-radius: 7px;
+  color: teal;
+  background: transparent;
+  cursor: pointer;
+`;
 const Slider = () => {
+  const [slideIndex, setSlideIndex] = useState();
+  const handleClick = () => {};
   return (
     <Container>
-      <Arrow direction="left">
+      <Arrow direction="left" onClick={() => handleClick("right")}>
         <ArrowBackIosIcon />
       </Arrow>
       <Wrapper>
-        <ImgContainer>
-          <Image src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pinterest.com%2Fpin%2F40-awesome-casual-fall-outfits-for-men-to-look-cool--417990409169028550%2F&psig=AOvVaw1ZG-K2C19OrZsR1a56Vmay&ust=1701429649796000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCNiLjcHN64IDFQAAAAAdAAAAABAE" />
-        </ImgContainer>
-        <InfoContainer></InfoContainer>
+        {sliderItems.map((item) => (
+          <Slide bg={item.bg}>
+            <ImgContainer>
+              <Image src={image} />
+            </ImgContainer>
+            <InfoContainer>
+              <Title>{item.title}</Title>
+              <Desc>{item.desc}</Desc>
+              <Button>SHOP NOW</Button>
+            </InfoContainer>
+          </Slide>
+        ))}
       </Wrapper>
-      <Arrow direction="right">
+      <Arrow direction="right" onClick={() => handleClick("right")}>
         <ArrowForwardIosIcon />
       </Arrow>
     </Container>
