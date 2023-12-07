@@ -3,7 +3,6 @@ import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import { useState } from "react";
 import { sliderItems } from "../data";
-import image from "../images/1.jpg";
 
 const Container = styled.div`
   width: 100%;
@@ -16,8 +15,7 @@ const Container = styled.div`
 const Arrow = styled.div`
   width: 50px;
   height: 50px;
-  background-color: #fff7f7;
-  border-radius: 50%;
+  color: teal;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -34,27 +32,30 @@ const Arrow = styled.div`
 const Wrapper = styled.div`
   height: 100%;
   display: flex;
-  transform: translateX(0vw);
+  transition: all 1.5s ease-in;
+  transform: translateX(${(props) => props.slideIndex * -100}vw);
 `;
 const Slide = styled.div`
   width: 100vw;
   height: 100vh;
   display: flex;
   align-items: center;
+  background-color: #${(props) => props.bg};
 `;
 const ImgContainer = styled.div`
   height: 100%;
   flex: 1;
 `;
 const Image = styled.img`
-  height: 80%;
+  height: 100%;
 `;
 const InfoContainer = styled.div`
   flex: 1;
-  padding: 50px;
+  padding: 10px 50px 50px 0px;
 `;
 const Title = styled.h1`
-  font-size: 78px;
+  font-size: 75px;
+  color: teal;
 `;
 const Desc = styled.p`
   margin: 25px 0px;
@@ -69,22 +70,34 @@ const Button = styled.button`
   border: 1.5px solid teal;
   border-radius: 7px;
   color: teal;
-  background: transparent;
+  background-color: transparent;
   cursor: pointer;
+  &:hover {
+    background: teal;
+    transition: 0.3s ease-in;
+    color: white;
+  }
 `;
+
 const Slider = () => {
-  const [slideIndex, setSlideIndex] = useState();
-  const handleClick = () => {};
+  const [slideIndex, setSlideIndex] = useState(0);
+  const handleClick = (direction) => {
+    if (direction === "left") {
+      setSlideIndex(slideIndex > 0 ? slideIndex - 1 : 2);
+    } else {
+      setSlideIndex(slideIndex < 2 ? slideIndex + 1 : 0);
+    }
+  };
   return (
     <Container>
       <Arrow direction="left" onClick={() => handleClick("right")}>
         <ArrowBackIosIcon />
       </Arrow>
-      <Wrapper>
+      <Wrapper slideIndex={slideIndex}>
         {sliderItems.map((item) => (
-          <Slide bg={item.bg}>
+          <Slide bg={item.bg} key={item.id}>
             <ImgContainer>
-              <Image src={image} />
+              <Image src={item.image} />
             </ImgContainer>
             <InfoContainer>
               <Title>{item.title}</Title>
