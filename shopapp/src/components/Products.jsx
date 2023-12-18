@@ -1,7 +1,12 @@
 import Product from "./Product";
-import { popularProducts } from "../data.js";
+import { popularProducts } from "../data";
 import styled from "styled-components";
-const Container = styled.div``;
+const Container = styled.div`
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-conntent: space-between;
+`;
 const Products = () => {
   return (
     <Container>

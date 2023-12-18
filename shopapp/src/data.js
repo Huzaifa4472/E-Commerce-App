@@ -2,7 +2,7 @@ export const sliderItems = [
   {
     id: 1,
     image:
-      "https://img.freepik.com/free-photo/young-african-american-traveler-man-summer-hat-wearing-black-sunglasses-holding-inflatable-ring-doing-rock-sign-sticking-tongue-out-having-fun-looking-camera-orange-back_141793-29997.jpg?w=826&t=st=1701628683~exp=1701629283~hmac=15be31942cfa1ebe4348486d3f762868f33ce3725564be1d6c992d542fe356e2",
+      "https://furorjeans.com/cdn/shop/products/47a1059-fmtgt21-031.jpg?v=1683057216",
     title: "SUMMER SALE",
     desc: "DONT COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS.",
     bg: "D57701",
@@ -10,7 +10,7 @@ export const sliderItems = [
   {
     id: 2,
     image:
-      "https://img.freepik.com/free-photo/medium-shot-man-wearing-jacket_23-2148895220.jpg?w=826&t=st=1701629770~exp=1701630370~hmac=626d3fa859bdc52c654e29d5021ef98b4b43e55bf1bea6261aa2547d8d81307b",
+      "https://furorjeans.com/cdn/shop/products/0n9a0256-fmtjw21-013.jpg?v=1683059610",
     title: "PRE-WINTER SALE",
     desc: "GET FLAT 30%/50% OFF FOR WINTER STUFF.",
     bg: "FFFFFF",
@@ -18,7 +18,7 @@ export const sliderItems = [
   {
     id: 3,
     image:
-      "https://img.freepik.com/free-photo/man-freezing-white_1368-3991.jpg?t=st=1701629510~exp=1701630110~hmac=d1cbd941bb177bb2b783b6d43a31fc7c52f45691fe8898a70850b8b39e546da3",
+      "https://furorjeans.com/cdn/shop/products/0n9a2865-fmths22-004_thumbnail.jpg?v=1683070856",
     title: "LAST CHANCE",
     desc: "LAST CHANCE TO AVAIL THIS OFFER UP TO 70% OFF!!!",
     bg: "FFFFFF",
@@ -28,50 +28,50 @@ export const categories = [
   {
     id: 1,
     title: "SHIRT STYLE!",
-    img: "https://as1.ftcdn.net/v2/jpg/06/26/92/32/1000_F_626923214_s8q4VWrGJRLfRlfMZMjQwNjdD7WMmY7c.jpg",
+    img: "https://furorjeans.com/cdn/shop/products/a59i8507_fmtgt21-034.jpg?v=1683057123",
   },
   {
     id: 2,
     title: "LOUNGEWEAR LOVE!",
-    img: "https://img.freepik.com/free-photo/thoughtful-young-man-parka-with-fur-hood_8353-1196.jpg?w=826&t=st=1701846792~exp=1701847392~hmac=8d6543f7ef4dcb36f6449cf765b07af1d3ce5309d9ae7a7893babba838f30689",
+    img: "https://furorjeans.com/cdn/shop/products/img_5627-fmtj21-002.jpg?v=1683059291",
   },
   {
     id: 3,
     title: "LIGHT JACKETS!",
-    img: "https://img.freepik.com/premium-photo/young-man-outdoors_967359-28.jpg?w=826",
+    img: "https://furorjeans.com/cdn/shop/products/a59i4213_fmtjd21-018.jpg?v=1683059149",
   },
 ];
 export const popularProducts = [
   {
     id: 1,
-    img: "https://img.freepik.com/premium-photo/young-man-outdoors_967359-28.jpg?w=826",
+    img: "https://furorjeans.com/cdn/shop/files/23_M_MenJackets_FMTJD21-013_NR1.jpg?v=1702030433",
   },
   {
     id: 2,
-    img: "https://img.freepik.com/premium-photo/young-man-outdoors_967359-28.jpg?w=826",
+    img: "https://furorjeans.com/cdn/shop/files/23_M_MenJackets_FMTJP23-007_1.jpg?v=1699445361",
   },
   {
     id: 3,
-    img: "https://img.freepik.com/premium-photo/young-man-outdoors_967359-28.jpg?w=826",
+    img: "https://furorjeans.com/cdn/shop/products/47a5645_fmtjk21-003.jpg?v=1683059683",
   },
   {
     id: 4,
-    img: "https://img.freepik.com/premium-photo/young-man-outdoors_967359-28.jpg?w=826",
+    img: "https://furorjeans.com/cdn/shop/products/img_5454_fmtjp22-004.jpg?v=1683073913",
   },
   {
     id: 5,
-    img: "https://img.freepik.com/premium-photo/young-man-outdoors_967359-28.jpg?w=826",
+    img: "https://furorjeans.com/cdn/shop/products/0n9a0238-fmtjp22-007_7_1.jpg?v=1683074112",
   },
   {
     id: 6,
-    img: "https://img.freepik.com/premium-photo/young-man-outdoors_967359-28.jpg?w=826",
+    img: "https://furorjeans.com/cdn/shop/products/img_5306_fmtjp22-017.jpg?v=1683073180",
   },
   {
     id: 7,
-    img: "https://img.freepik.com/premium-photo/young-man-outdoors_967359-28.jpg?w=826",
+    img: "https://furorjeans.com/cdn/shop/products/0n9a0735-fmtjp22-002.jpg?v=1683074608",
   },
   {
     id: 8,
-    img: "https://img.freepik.com/premium-photo/young-man-outdoors_967359-28.jpg?w=826",
+    img: "https://furorjeans.com/cdn/shop/files/23_M_MenJackets_FMTJP23-008_1.jpg?v=1699445413",
   },
 ];
