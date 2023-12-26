@@ -39,6 +39,7 @@ const Middle = styled.div`
 `;
 const Logo = styled.h1`
   font-weight: bold;
+  letter-spacing: 2px;
   color: black;
 `;
 const Rigt = styled.div`
@@ -64,7 +65,7 @@ const Navbar = () => {
           </SearchContainer>
         </Left>
         <Middle>
-          <Logo>ZA!FF!...</Logo>
+          <Logo>FUROR</Logo>
         </Middle>
         <Rigt>
           <MenuItem>REGISTER</MenuItem>

@@ -35,14 +35,15 @@ const Image = styled.img`
   border-radius: 10px;
 `;
 const Button = styled.button`
-  background-color: orange;
+  background-color: teal;
   padding: 8px;
   border-radius: 7px;
   color: white;
-  border: 1px solid orange;
+  border: 1px solid teal;
   font-weight: 600;
   &:hover {
     background: transparent;
+    color: teal;
     transition: all 0.3s ease-in;
   }
 `;
