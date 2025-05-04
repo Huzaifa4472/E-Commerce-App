@@ -18,7 +18,7 @@ export const sliderItems = [
   {
     id: 3,
     image:
-      "https://furorjeans.com/cdn/shop/products/0n9a2865-fmths22-004_thumbnail.jpg?v=1683070856",
+      "https://furorjeans.com/cdn/shop/files/0N9A7952FMTS5-32185_960x1200_crop_center.webp?v=1744355135",
     title: "LAST CHANCE",
     desc: "LAST CHANCE TO AVAIL THIS OFFER UP TO 70% OFF!!!",
     bg: "FFFFFF",
@@ -33,7 +33,7 @@ export const categories = [
   {
     id: 2,
     title: "LOUNGEWEAR LOVE!",
-    img: "https://furorjeans.com/cdn/shop/products/img_5627-fmtj21-002.jpg?v=1683059291",
+    img: "https://furorjeans.com/cdn/shop/files/24_M_MenShirts_FMTS24-32053_4_960x1200_crop_center.jpg?v=1712397990",
   },
   {
     id: 3,
@@ -60,7 +60,7 @@ export const popularProducts = [
   },
   {
     id: 5,
-    img: "https://furorjeans.com/cdn/shop/products/0n9a0238-fmtjp22-007_7_1.jpg?v=1683074112",
+    img: "https://furorjeans.com/cdn/shop/files/FMTS24-32178_7_thumbnail_b8424eed-304a-45cd-ba95-af7dc0b11c84_960x1200_crop_center.webp?v=1744355199",
   },
   {
     id: 6,
@@ -68,7 +68,7 @@ export const popularProducts = [
   },
   {
     id: 7,
-    img: "https://furorjeans.com/cdn/shop/products/0n9a0735-fmtjp22-002.jpg?v=1683074608",
+    img: "https://furorjeans.com/cdn/shop/files/0N9A8085FMTS24-32081_960x1200_crop_center.webp?v=1744355074",
   },
   {
     id: 8,
